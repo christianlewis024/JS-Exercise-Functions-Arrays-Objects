@@ -39,6 +39,7 @@ function addNumbers(num1, num2) {
  * }
  */
 function makePersonObject(xid, xname, xemail) {
+  console.log(makePersonObject);
   let person = {
     id: xid,
     name: xname,
@@ -47,7 +48,6 @@ function makePersonObject(xid, xname, xemail) {
   return person;
 }
 makePersonObject(5, "Leia", "Leia@leia.com");
-console.log(makePersonObject());
 
 /**
  * ### Challenge `getName`
@@ -81,6 +81,7 @@ console.log(getName({ id: 5, name: "leia", email: "leia@leia.com" }));
  *         where `{name}` is the name passed into `makeSmartPerson`.
  */
 function makeSmartPerson(name) {
+  console.log(makeSmartPerson);
   return {
     name: name,
     sum: function(num1, num2) {
@@ -91,7 +92,6 @@ function makeSmartPerson(name) {
     }
   };
 }
-console.log(makeSmartPerson);
 
 /*
 // ⭐️ Example Test Data ⭐️
@@ -123,13 +123,13 @@ var inventory = [
  *
  * NOTE: This example has been completed for you.
  **/
-function get3rdCar(inventory) {
-  const the3rd = inventory.find((item, index) => {
-    return index === 2; // we use 2 because index is zero-based.
-  });
-  return `The car is a ${the3rd.car_make} ${the3rd.car_model}`;
-}
-console.log(get3rdCar);
+// function get3rdCar(inventory) {
+//   console.log(get3rdCar);
+//   const the3rd = inventory.find((item, index) => {
+//     return index === 2; // we use 2 because index is zero-based.
+//   });
+//   return `The car is a ${the3rd.car_make} ${the3rd.car_model}`;
+// }
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -148,9 +148,9 @@ console.log(get3rdCar);
  * it will return `This is a Lincoln Navigator`.
  */
 function getCarInfoByIndex(inventory, index) {
+  console.log(getCarInfoByIndex);
   return `This is a ${inventory[index].car_make} ${inventory[index].car_model}`;
 }
-console.log(getCarInfoByIndex);
 
 /**
  * ### Challenge `getLastCarInfo`
